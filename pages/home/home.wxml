@@ -1,5 +1,16 @@
 <!--pages/home/home.wxml-->
-<text class="title">hello world</text>
-<button size="mini">按钮</button>
+<view>hello {{name}}</view>
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">counter++</button>
+<button size="mini" bindtap="handlesubtraction">counter--</button>
 
-<view>2.知识点2</view>
+<view>
+  <button size="mini" open-type="getUserInfo" bindgetuserinfo="handelGetUserInfo">
+    获取授权
+  </button>
+</view>
+
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+<view wx:for="{{list}}">{{item.UserName}}</view>
