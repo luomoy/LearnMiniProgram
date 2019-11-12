@@ -1,0 +1,24 @@
+/* pages/button/button.wxss */
+
+.pressed {
+  background: pink;
+  color: #fff;
+}
+
+input {
+  border: 1px solid green;
+  margin: 10px 30px;
+}
+
+.container1 {
+  background: pink;
+  height: 100px
+}
+
+.item1 {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  margin: 10px;
+  display: inline-block;
+}

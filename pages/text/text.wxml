@@ -1,0 +1,10 @@
+<!--pages/text/text.wxml-->
+<text>pages/text/text.wxml \n</text>
+
+<text selectable>选中\n</text>
+
+<text space="nbsp">hello world\n</text>
+<text space="ensp">hello world\n</text><!--半个中文的大小-->
+<text space="emsp">hello world\n</text><!--一个中文的大小-->
+
+<text decode>5 &gt; 3</text>

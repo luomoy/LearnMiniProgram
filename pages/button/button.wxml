@@ -1,0 +1,24 @@
+<!--pages/button/button.wxml-->
+<input type="text" placeholder="请输入" placeholder-style="color:red" confirm-type="next"/>
+
+<scroll-view class="container1" scroll-y enable-back-to-top="true">
+  <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn" plain disabled>按钮</button>
+
+<button loading="{{isLoading}}">按钮</button>
+
+<button hover-class="pressed">按钮</button>
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}"></image>
+
+<image 
+  style="width:200px;height:200px" 
+  lazy-load mode="aspectFit" 
+  bindload="handleImageLoad" 
+  show-menu-by-longpress 
+  src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg">
+</image>
