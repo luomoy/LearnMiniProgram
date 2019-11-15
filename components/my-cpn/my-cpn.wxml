@@ -1,0 +1,4 @@
+<!--components/my-cpn/my-cpn.wxml-->
+<view class="title titleclass">{{title}}</view>
+
+<button size="mini" bind:tap="handleIncrement">+1</button>

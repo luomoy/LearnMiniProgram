@@ -1,6 +1,7 @@
 <!--pages/button/button.wxml-->
 <input type="text" placeholder="请输入" placeholder-style="color:red" confirm-type="next"/>
 
+<navigator open-type="navigateBack">返回</navigator>
 <scroll-view class="container1" scroll-y enable-back-to-top="true">
   <view wx:for="{{10}}" class="item1">{{item}}</view>
 </scroll-view>

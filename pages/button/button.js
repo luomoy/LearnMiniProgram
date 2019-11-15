@@ -1,4 +1,5 @@
 // pages/button/button.js
+
 Page({
 
   /**
@@ -7,6 +8,15 @@ Page({
   data: {
     isLoading: true,
     imagePath: ''
+  },
+  onLoad(options){
+    this.get_data_origin();
+    request({
+      url: 'http://49.234.200.243:801/V3/questions/GetQuestionList'
+    })
+  },
+  get_data_origin(){
+
   },
   handleChooseAlbum() {
     wx.chooseImage({
